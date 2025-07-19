@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sign in - Crocolli.</title>
+    <link rel="stylesheet" href="stylesignin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Login Section -->
+  <div class="container">
+    <h1>Sign in</h1>
+    <input type="text" id="username" placeholder="Enter your username" />
+    <input type="password" id="password" placeholder="Enter your password" />
+    <button onclick="savedinfo()">Sign in</button>
+    <p class="note">Don't have an account? <a href="#">Sign up</a></p>
+  </div>
+  <!-- Script to Login -->
+  <script>
+    function savedinfo() {
+      const uname = document.getElementById("username").value.trim();
+      const pass = document.getElementById("password").value.trim();
+
+      if (!uname || !pass) {
+        alert("Please fill out both fields.");
+        return;
+      }
+
+      alert(`${uname} logged in successfully.`);
+      window.location.href = "./index.html";
+    }
+  </script>
+</body>
+</html>

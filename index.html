@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crocolli - Online Food Delivery Web App</title>
+        <link rel="stylesheet" href="/stylemain.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- Header Section-->
+        <header>
+            <!-- Navbar Mobile -->
+            <nav class="navbar">
+                <div class="hamburger" id="hamburger">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="navlist">
+                        <li><a href="#hero-section">Home</a></li>
+                        <li><a href="#menu-section">Menu</a></li>
+                        <li><a href="#" class="order-history-link">Orders</a></li>
+                        <li><a href="./signin.html">Sign in</a></li>
+                    </ul>
+                </div>
+                <!-- Navbar Desktop -->
+                <a href="/index.html" class="logo"><img src="./Asset/Crocolli-logo.png"></a>
+                <div class="nav-right">
+                    <ul class="navlist">
+                        <li>
+                            <a href="#hero-section" >Home</a>
+                        </li>
+                        <li>
+                            <a href="#menu-section" >Menu</a>
+                        </li>
+                        <li>
+                            <a href="#" class="order-history-link">Orders</a>
+                        </li>
+                        <li>
+                            <a href="./signin.html">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="checkout-cart">
+                    <a href="#cart-section" ><i class="fa-solid fa-cart-shopping" style="color: #ff570a;"></i></a>
+                    <span id="cart-count">0</span>
+                </div>
+            </nav>
+        </header>
+        <!-- Main Section -->
+        <main>
+            <!-- Hero Section -->
+            <section id="hero-section">
+                <p>Fresh flavors, delivered fast — <br>right to your door.</p>
+                <div id="search-container">
+                    <input type="text" id="search-input" placeholder="Search for food...">
+                    <button id="search-button">Search</button>
+                </div>
+            </section>
+            <!-- Menu Section -->
+            <section id="menu-section">
+                <h1>Menu</h1>
+                <div class="menus-items">
+                    <div class="item-all">
+                        <img src="./Asset/briyani.jpg">
+                        <p>Biryani</p>
+                        <p class="price-item">₹299</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="item-all">
+                        <img src="./Asset/pizza.jpg">
+                        <p>Pizza</p>
+                        <p class="price-item">₹699</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="item-all">
+                        <img src="./Asset/burger.jpg">
+                        <p>Burger</p>
+                        <p class="price-item">₹399</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menus-items">
+                    <div class="item-all">
+                        <img src="./Asset/pasta.jpg">
+                        <p>Pasta</p>
+                        <p class="price-item">₹759</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="item-all">
+                        <img src="./Asset/cake.jpg">
+                        <p>Cake</p>
+                        <p class="price-item">₹489</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="item-all">
+                        <img src="./Asset/fries.jpg">
+                        <p>Fries</p>
+                        <p class="price-item">₹319</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menus-items">
+                    <div class="item-all">
+                        <img src="./Asset/tacos.jpg">
+                        <p>Tacos</p>
+                        <p class="price-item">₹149</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="item-all">
+                        <img src="./Asset/idli.jpg">
+                        <p>Idli</p>
+                        <p class="price-item">₹15/piece</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="item-all">
+                        <img src="./Asset/chickentikka.jpg">
+                        <p>Chicken Tikka</p>
+                        <p class="price-item">₹899</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menus-items">
+                    <div class="item-all">
+                        <img src="./Asset/muttoncurry.jpg">
+                        <p>Mutton Curry</p>
+                        <p class="price-item">₹499</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="item-all">
+                        <img src="./Asset/milkshake.jpg">
+                        <p>Milk Shake</p>
+                        <p class="price-item">₹99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="item-all">
+                        <img src="./Asset/fishgrill.jpg">
+                        <p>Grilled Fish</p>
+                        <p class="price-item">₹699</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Cart Section -->
+            <section id="cart-section">
+                <h2>Your Cart</h2>
+                <ul id="cart-items"></ul>
+                <p id="total-price">Total: ₹0</p>
+                <button id="place-order">Place Order</button>
+            </section>
+        </main>
+        <!-- Footer Section -->
+        <footer>
+            <p>Copyright - 2025 All rights reserved. Crocolli.</p>
+        </footer>
+        <!-- Order Popup Confirmation -->
+        <div id="order-popup" class="popup-overlay">
+            <div class="popup-content">
+                <h2>Confirm Your Order</h2>
+                <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="user-name" name="user-name" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="user-phone" name="user-phone" pattern="[0-9]{10}" required>
+
+                <label>Payment Method:</label>
+                <div class="payment-options">
+                    <label><input type="radio" name="payment" value="Cash" required> Cash on Delivery</label>
+                    <label><input type="radio" name="payment" value="UPI" required> UPI</label>
+                </div>
+
+                <button type="submit" class="confirm-btn">Place Order</button>
+                <button type="button" class="cancel-btn" onclick="closePopup()">Cancel</button>
+                </form>
+            </div>
+        </div>
+        <!-- Order History -->
+        <div id="order-history-popup" class="popup-overlay">
+            <div class="popup-content">
+                <h2>Order History</h2>
+                <ul id="order-history-list"></ul>
+                <button class="cancel-btn" onclick="closeHistoryPopup()">Close</button>
+            </div>
+        </div>
+
+    </body>
+    <script src="./scriptmain.js"></script>
+</html>
